@@ -60,7 +60,7 @@ header .sub-menu .search {
 }
 header .sub-menu .search input {
   width: 36px;
-  height: 34px;
+  height: inherit;
   padding: 4px 10px;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -69,7 +69,7 @@ header .sub-menu .search input {
   background: #fff;
   color: #777;
   font-size: 12px;
-  transition: .4s;
+  transition: width .4s;
 }
 header .sub-menu .search input:focus {
   width: 190px;
@@ -85,9 +85,6 @@ header .sub-menu .search i {
   right: 10px;
   margin: auto;
   transition: .4s;
-}
-header .sub-menu .search:hover i {
-  opacity: 0.6;
 }
 header .sub-menu .search.focused i {
   opacity: 0;

@@ -115,10 +115,7 @@ promotionToggleBtn.addEventListener('click', function () {
 function random(min, max) {
   // `.toFixed()`를 통해 반환된 '문자 데이터'를,
   // `parseFloat()`을 통해 소수점을 가지는 '숫자 데이터'로 변환
-  return parseFloat(
-    (Math.random() * (max - min) + min)
-      .toFixed(2)
-  )
+  return parseFloat((Math.random() * (max - min) + min).toFixed(2))
 }
 // 부유하는(떠 다니는) 요소를 만드는 함수
 function floatingObject(selector, minTime, maxTime, delay, size) {
