@@ -1,0 +1,38 @@
+/*REWARDS*/
+.rewards {
+  position: relative;
+}
+.rewards .bg-left {
+  width: 50%;
+  height: 100%;
+  background: #272727;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rewards .bg-right {
+  width: 50%;
+  height: 100%;
+  background: #d5c798;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.rewards .inner {
+  background: url("../images/rest/rewards_bg.jpg");
+  height: 241px;
+}
+.rewards .btn-group {
+  position: absolute;
+  right: 0;
+  bottom: 24px;
+  display: grid;
+  grid-template-columns: 130px 110px;
+  grid-gap: 10px;
+}
+.rewards .btn-group .btn {
+  width: auto;
+}
+.rewards .btn-group .btn.gift {
+  grid-column: span 2;
+}

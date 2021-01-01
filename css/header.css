@@ -1,0 +1,173 @@
+/*HEADER*/
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: #F6F5F0;
+  border-bottom: 1px solid #c8c8c8;
+}
+header > .inner {
+  height: 120px;
+}
+header .logo {
+  height: 75px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header .sub-menu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: flex;
+}
+header .sub-menu ul.menu {
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+header .sub-menu ul.menu li {
+  position: relative;
+}
+header .sub-menu ul.menu li::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 12px;
+  background: #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header .sub-menu ul.menu li:first-child::before {
+  display: none;
+}
+header .sub-menu ul.menu li a {
+  padding: 11px 16px;
+  display: block;
+  font-size: 13px;
+  color: #656565;
+}
+header .sub-menu ul.menu li a:hover {
+  color: black;
+}
+header .sub-menu .search {
+  position: relative;
+  height: 34px;
+  cursor: text;
+}
+header .sub-menu .search input {
+  width: 36px;
+  height: 34px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  background: #fff;
+  color: #777;
+  font-size: 12px;
+  transition: .4s;
+}
+header .sub-menu .search input:focus {
+  width: 190px;
+  border: 1px solid #669900;
+}
+header .sub-menu .search i {
+  font-size: 15px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
+  transition: .4s;
+}
+header .sub-menu .search:hover i {
+  opacity: 0.6;
+}
+header .sub-menu .search.focused i {
+  opacity: 0;
+}
+header .main-menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+header .main-menu > .item {
+
+}
+header .main-menu > .item > .item__name {
+  padding: 10px 20px 34px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #333;
+}
+header .main-menu > .item:hover > .item__name {
+  background-color: #2C2A29;
+  color: #669900;
+  border-radius: 6px 6px 0 0;
+}
+header .main-menu > .item > .item__contents {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  display: none;
+}
+header .main-menu > .item:hover > .item__contents {
+  display: block;
+  background-color: #2C2A29;
+}
+header .main-menu > .item > .item__contents .contents__menu {
+
+}
+header .main-menu > .item > .item__contents .contents__menu > ul {
+  padding: 20px 0;
+  display: flex;
+}
+header .main-menu > .item > .item__contents .contents__menu > ul > li {
+  width: 220px;
+}
+header .main-menu > .item > .item__contents .contents__menu > ul > li h4 {
+  padding: 3px 0 12px 0;
+  font-size: 14px;
+  color: #fff;
+}
+header .main-menu > .item > .item__contents .contents__menu > ul > li ul li {
+  padding: 5px 0;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+}
+header .main-menu > .item > .item__contents .contents__menu > ul > li ul li:hover {
+  color: #669900;
+}
+header .main-menu > .item > .item__contents .contents__texture {
+  padding: 26px 0;
+  font-size: 12px;
+  background-image: url('../images/header/pattern.jpg');
+  background-repeat: repeat-x;
+}
+header .main-menu > .item > .item__contents .contents__texture h4 {
+  color: #999;
+  font-weight: 900;
+  font-size: 12px;
+  margin: 0;
+}
+header .main-menu > .item > .item__contents .contents__texture h4.new::after {
+  content: url("../images/header/new.png");
+  position: relative;
+  top: 3px;
+  left: 5px;
+}
+header .main-menu > .item > .item__contents .contents__texture p {
+  color: #64a70b;
+  margin: 4px 0 14px;
+}
+header .main-menu > .item > .item__contents .contents__texture .image {
+  margin-right: 15px;
+}

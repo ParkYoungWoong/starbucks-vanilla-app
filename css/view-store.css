@@ -1,0 +1,56 @@
+/*VIEW THE STORE*/
+.view-store {
+  background-image: url("../images/rest/view_store_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+.view-store .medal {
+  width: 334px;
+  height: 334px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  perspective: 600px;
+}
+.view-store .medal .front {
+  background: url("../images/rest/view_store_medal_front.png");
+  width: 334px;
+  height: 334px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .7s;
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+}
+.view-store .medal .back {
+  background: url("../images/rest/view_store_medal_back.png");
+  width: 334px;
+  height: 334px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .7s;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+.view-store .medal:hover .front {
+  transform: rotateY(180deg);
+}
+.view-store .medal:hover .back {
+  transform: rotateY(0deg);
+}
+.view-store .medal .back .btn {
+  position: absolute;
+  top: 240px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
