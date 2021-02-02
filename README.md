@@ -94,8 +94,8 @@
 <link rel="icon" href="./favicon.png" />
 ```
 
-- `favicon.png` 500 x 500 (px)
 - `favicon.ico` 64 x 64 (px) 또는 32 x 32 또는 16 x 16
+- `favicon.png` 500 x 500 (px)
 
 <img src="https://raw.githubusercontent.com/ParkYoungWoong/starbucks-vanilla-app/master/favicon.png" alt="Starbucks" width="16" />
 <img src="https://raw.githubusercontent.com/ParkYoungWoong/starbucks-vanilla-app/master/favicon.png" alt="Starbucks" width="200" />
