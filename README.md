@@ -6,6 +6,8 @@
 
 [DEMO](https://flamboyant-lumiere-482a1e.netlify.app/)
 
+![Starbucks](https://raw.githubusercontent.com/ParkYoungWoong/starbucks-vanilla-app/master/_assets/main_screenshot.jpg)
+
 ## 문자 인코딩(Character Encoding) 설정
 
 문자가 인코딩되는 방식을 설정합니다.
@@ -36,6 +38,9 @@
 
 웹페이지가 소셜 미디어(페이스북 등)로 공유될 때 우선적으로 활용되는 정보를 지정합니다.
 
+![Slack Open Graph example](https://raw.githubusercontent.com/ParkYoungWoong/starbucks-vanilla-app/master/_assets/slack_og_example.jpg)
+![KakaoTalk Open Graph example](https://raw.githubusercontent.com/ParkYoungWoong/starbucks-vanilla-app/master/_assets/kakao_og_example.jpg)
+
 [더 많은 오픈 그래프 속성 보기](https://ogp.me/)
 
 ```html
@@ -53,8 +58,6 @@
 - `og:description`: 페이지의 간단한 설명
 - `og:image`: 페이지의 대표 이미지 주소(URL)
 - `og:url`: 페이지 주소(URL)
-
-![KakaoTalk Open Graph example](https://raw.githubusercontent.com/ParkYoungWoong/starbucks-vanilla-app/master/_assets/kakao_og_example.jpg)
 
 ## 트위터 카드(Twitter Cards)
 
@@ -94,8 +97,8 @@
 - `favicon.png` 500 x 500 (px)
 - `favicon.ico` 64 x 64 (px) 또는 32 x 32 또는 16 x 16
 
-<img src="https://raw.githubusercontent.com/ParkYoungWoong/starbucks-vanilla-app/master/favicon.png" alt="Starbucks" width="200" />
 <img src="https://raw.githubusercontent.com/ParkYoungWoong/starbucks-vanilla-app/master/favicon.png" alt="Starbucks" width="16" />
+<img src="https://raw.githubusercontent.com/ParkYoungWoong/starbucks-vanilla-app/master/favicon.png" alt="Starbucks" width="200" />
 
 ### .ico 파일 제작
 
@@ -168,7 +171,7 @@ gsap.to(window, .7, {
 
 ## Swiper
 
-[Swiper](https://swiperjs.com/)는 하드웨어 가속 전환과 여러 기본 동작을 갖춘 현대적인 슬라이더 라이브러리입니다.<br>
+[Swiper](https://swiperjs.com/)는 하드웨어 가속 전환과 여러 기본 동작을 갖춘 현대적인 슬라이드 라이브러리입니다.
 
 [Getting Started With Swiper](https://swiperjs.com/get-started)
 
@@ -273,3 +276,14 @@ JavaScript를 '엄격 모드'로 사용
 - 일반적인 코딩 실수에서 예외 처리
 - 안전하지 않은 액션에 대한 예외 처리 (ex: 전역 객체로 접근)
 - 혼란스럽거나 제대로 고려되지 않는 기능들을 비활성화
+
+## 랜덤한 숫자를 생성하는 함수
+
+```js
+// 범위 랜덤 함수(소수점 2자리까지)
+function random(min, max) {
+  // `.toFixed()`를 통해 반환된 문자 데이터를,
+  // `parseFloat()`을 통해 소수점을 가지는 숫자 데이터로 변환
+  return parseFloat((Math.random() * (max - min) + min).toFixed(2))
+}
+```
