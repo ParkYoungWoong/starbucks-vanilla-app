@@ -716,7 +716,7 @@ header .badges .badge:last-child {
   width: inherit;
   height: inherit;
   position: absolute;
-  transition: 2s;
+  transition: 1s;
   backface-visibility: hidden;
 }
 .reserve-store .medal .front {
