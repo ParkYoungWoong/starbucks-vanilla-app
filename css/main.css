@@ -119,6 +119,7 @@ header .logo {
   position: absolute;
   top: 0;
   bottom: 0;
+  left: 0;
   margin: auto;
 }
 header .sub-menu {
@@ -136,7 +137,6 @@ header .sub-menu ul.menu li {
 }
 header .sub-menu ul.menu li::before {
   content: "";
-  display: block;
   width: 1px;
   height: 12px;
   background-color: #e5e5e5;
@@ -155,12 +155,11 @@ header .sub-menu ul.menu li a {
   color: #656565;
 }
 header .sub-menu ul.menu li a:hover {
-  color: black;
+  color: #000;
 }
 header .sub-menu .search {
   position: relative;
   height: 34px;
-  cursor: text;
 }
 header .sub-menu .search input {
   width: 36px;
@@ -177,10 +176,9 @@ header .sub-menu .search input {
 }
 header .sub-menu .search input:focus {
   width: 190px;
-  border: 1px solid #669900;
+  border-color: #669900;
 }
 header .sub-menu .search .material-icons {
-  width: 24px;
   height: 24px;
   position: absolute;
   top: 0;
@@ -196,79 +194,80 @@ header .main-menu {
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 1;
   display: flex;
 }
-header .main-menu > .item {
+header .main-menu .item {
 
 }
-header .main-menu > .item > .item__name {
+header .main-menu .item .item__name {
   padding: 10px 20px 34px 20px;
   font-family: Arial, sans-serif;
   font-size: 13px;
   color: #333;
 }
-header .main-menu > .item:hover > .item__name {
+header .main-menu .item:hover .item__name {
   background-color: #2C2A29;
   color: #669900;
   border-radius: 6px 6px 0 0;
 }
-header .main-menu > .item > .item__contents {
+header .main-menu .item .item__contents {
   width: 100%;
   position: fixed;
   left: 0;
   display: none;
 }
-header .main-menu > .item:hover > .item__contents {
+header .main-menu .item:hover .item__contents {
   display: block;
   background-color: #2C2A29;
 }
-header .main-menu > .item > .item__contents .contents__menu {
+header .main-menu .item .item__contents .contents__menu {
 
 }
-header .main-menu > .item > .item__contents .contents__menu > ul {
+header .main-menu .item .item__contents .contents__menu > ul {
   padding: 20px 0;
   display: flex;
 }
-header .main-menu > .item > .item__contents .contents__menu > ul > li {
+header .main-menu .item .item__contents .contents__menu > ul > li {
   width: 220px;
 }
-header .main-menu > .item > .item__contents .contents__menu > ul > li h4 {
+header .main-menu .item .item__contents .contents__menu > ul > li h4 {
   padding: 3px 0 12px 0;
   font-size: 14px;
   color: #fff;
 }
-header .main-menu > .item > .item__contents .contents__menu > ul > li ul li {
+header .main-menu .item .item__contents .contents__menu > ul > li ul li {
   padding: 5px 0;
   font-size: 12px;
   color: #999;
   cursor: pointer;
 }
-header .main-menu > .item > .item__contents .contents__menu > ul > li ul li:hover {
+header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
   color: #669900;
 }
-header .main-menu > .item > .item__contents .contents__texture {
+header .main-menu .item .item__contents .contents__texture {
   padding: 26px 0;
   font-size: 12px;
   background-image: url('../images/main_menu_pattern.jpg');
   background-repeat: repeat-x;
 }
-header .main-menu > .item > .item__contents .contents__texture h4 {
+header .main-menu .item .item__contents .contents__texture h4 {
   color: #999;
   font-weight: 900;
   font-size: 12px;
   margin: 0;
 }
-header .main-menu > .item > .item__contents .contents__texture h4.new::after {
+header .main-menu .item .item__contents .contents__texture h4.new::after {
   content: url("../images/main_menu_new_icon.png");
   position: relative;
   top: 3px;
   left: 5px;
 }
-header .main-menu > .item > .item__contents .contents__texture p {
+header .main-menu .item .item__contents .contents__texture p {
   color: #64a70b;
   margin: 4px 0 14px;
 }
-header .main-menu > .item > .item__contents .contents__texture .image {
+header .main-menu .item .item__contents .contents__texture .image {
   margin-right: 15px;
 }
 /*BADGES*/
@@ -276,7 +275,6 @@ header .badges {
   position: absolute;
   top: 132px;
   right: 12px;
-  z-index: 98;
 }
 header .badges .badge {
   border-radius: 10px;

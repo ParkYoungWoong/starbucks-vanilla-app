@@ -6,31 +6,34 @@
 // 검색창 요소(.search) 찾기.
 const searchEl = document.querySelector('.search')
 const searchInputEl = searchEl.querySelector('input')
-// 검색창 요소에 포커스된 경우 실행할 함수 선언.
-function onSearch() {
-  searchEl.classList.add('focused')
-  searchInputEl.setAttribute('placeholder', '통합검색')
-}
-// 검색창 요소에서 포커스가 해제(블러)되면 실행할 함수 선언.
-function offSearch() {
-  searchEl.classList.remove('focused')
-  searchInputEl.setAttribute('placeholder', '')
-}
 // 검색창 요소를 클릭하면 실행.
 searchEl.addEventListener('click', function () {
   searchInputEl.focus()
 })
 // 검색창 요소 내부 실제 input 요소에 포커스되면 실행.
-searchInputEl.addEventListener('focus', onSearch)
+searchInputEl.addEventListener('focus', function () {
+  searchEl.classList.add('focused')
+  searchInputEl.setAttribute('placeholder', '통합검색')
+})
 // 검색창 요소 내부 실제 input 요소에서 포커스가 해제(블러)되면 실행.
-searchInputEl.addEventListener('blur', offSearch)
-// 검색창 요소에서 키보드 키를 누르고 떼면 실행.
-searchInputEl.addEventListener('keyup', function (event) {
-  // TODO: 서버로 전송 로직..
-  if (event.key === 'Enter') {
-    searchInputEl.value = ''
-    offSearch()
-  }
+searchInputEl.addEventListener('blur', function () {
+  searchEl.classList.remove('focused')
+  searchInputEl.setAttribute('placeholder', '')
+})
+
+
+/**
+ * 순서대로 나타나는 기능
+ */
+// 나타날 요소들(.fade-in) 찾기.
+const fadeEls = document.querySelectorAll('.fade-in')
+// 나타날 요소들을 하나씩 반복해서 처리!
+fadeEls.forEach(function (fadeEl, index) {
+  // 각 요소들을 순서대로(delay) 보여지게 함!
+  gsap.to(fadeEl, 1, {
+    delay: (index + 1) * .7,
+    opacity: 1
+  })
 })
 
 
@@ -77,21 +80,6 @@ toTopEl.addEventListener('click', function () {
   // 페이지 위치를 최상단으로 부드럽게(0.7초 동안) 이동.
   gsap.to(window, .7, {
     scrollTo: 0
-  })
-})
-
-
-/**
- * 순서대로 나타나는 기능
- */
-// 나타날 요소들(.fade-in) 찾기.
-const fadeEls = document.querySelectorAll('.fade-in')
-// 나타날 요소들을 하나씩 반복해서 처리!
-fadeEls.forEach(function (fadeEl, index) {
-  // 각 요소들을 순서대로(delay) 보여지게 함!
-  gsap.to(fadeEl, 1, {
-    delay: (index + 1) * .7,
-    opacity: 1
   })
 })
 

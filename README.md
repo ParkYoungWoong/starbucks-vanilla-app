@@ -139,6 +139,8 @@ body {
 
 [구글에서 제공하는 머터리얼 아이콘](https://material.io/resources/icons/?style=baseline)을 무료로 사용할 수 있습니다.
 
+[Getting started for web](https://material.io/develop/web/getting-started)
+
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
@@ -263,13 +265,14 @@ new ScrollMagic
 
 ## JS Strict Mode
 
-JavaScript를 '엄격 모드'로 사용
+JavaScript를 '엄격 모드'로 사용합니다.<br>
+파일 혹은 함수의 최상단에 작성해야 합니다.
 
 ```javascript
 'use strict';
 ```
 
-> 'Strict Mode'는 ECMAScript 5 버전에 있는 새로운 기능으로써, 당신의 프로그램 또는 함수를 엄격한 운용 콘텍스트 안에서 실행시킬 수 있게끔 합니다. 이 엄격한 콘텍스트는 몇가지 액션들을 실행할 수 없도록 하며, 좀 더 많은 예외를 발생시킵니다.
+> 'Strict Mode'는 ECMAScript 5 버전에 있는 새로운 기능으로써, 프로그램 또는 함수를 엄격한 운용 콘텍스트 안에서 실행시킬 수 있게끔 합니다. 이 엄격한 콘텍스트는 몇가지 액션들을 실행할 수 없도록 하며, 좀 더 많은 예외를 발생시킵니다.
 
 ### 엄격 모드의 장점
 
