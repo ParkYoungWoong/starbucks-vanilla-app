@@ -204,7 +204,6 @@ header .main-menu .item .item__name {
   padding: 10px 20px 34px 20px;
   font-family: Arial, sans-serif;
   font-size: 13px;
-  color: #333;
 }
 header .main-menu .item:hover .item__name {
   background-color: #2C2A29;
@@ -219,10 +218,9 @@ header .main-menu .item .item__contents {
 }
 header .main-menu .item:hover .item__contents {
   display: block;
-  background-color: #2C2A29;
 }
 header .main-menu .item .item__contents .contents__menu {
-
+  background-color: #2C2A29;
 }
 header .main-menu .item .item__contents .contents__menu > ul {
   padding: 20px 0;
@@ -257,18 +255,9 @@ header .main-menu .item .item__contents .contents__texture h4 {
   font-size: 12px;
   margin: 0;
 }
-header .main-menu .item .item__contents .contents__texture h4.new::after {
-  content: url("../images/main_menu_new_icon.png");
-  position: relative;
-  top: 3px;
-  left: 5px;
-}
 header .main-menu .item .item__contents .contents__texture p {
   color: #64a70b;
   margin: 4px 0 14px;
-}
-header .main-menu .item .item__contents .contents__texture .image {
-  margin-right: 15px;
 }
 /*BADGES*/
 header .badges {
