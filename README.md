@@ -196,10 +196,6 @@ new Swiper('.swiper-container', {
 
 [IFrame Player API](https://developers.google.com/youtube/iframe_api_reference?hl=ko)를 통해 YouTube 동영상을 제어할 수 있습니다.
 
-```html
-<script src="https://www.youtube.com/iframe_api"></script>
-```
-
 유튜브 영상이 출력될 위치에 요소를 지정(생성)합니다.
 
 ```html
@@ -212,6 +208,12 @@ new Swiper('.swiper-container', {
 [플레이어 매개변수(playerVars)](https://developers.google.com/youtube/player_parameters.html?playerVersion=HTML5&hl=ko)에서 더 많은 옵션을 확인할 수 있습니다.
 
 ```js
+// Youtube IFrame API를 비동기로 로드합니다.
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
 function onYouTubePlayerAPIReady() {
   // <div id="player"></div>
   new YT.Player('player', {
