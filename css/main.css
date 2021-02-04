@@ -29,46 +29,46 @@ img {
   border-radius: 4px;
   color: #333;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   cursor: pointer;
   box-sizing: border-box;
   display: block;
-  transition: all .4s;
+  transition: .4s;
 }
 .btn:hover {
   background-color: #333;
-  color: white;
+  color: #FFF;
 }
-.btn.btn-reverse {
+.btn.btn--reverse {
   background-color: #333;
   color: #FFF;
 }
-.btn.btn-reverse:hover {
-  background: none;
+.btn.btn--reverse:hover {
+  background-color: transparent;
   color: #333;
 }
-.btn.btn-brown {
+.btn.btn--brown {
   color: #592B18;
   border-color: #592B18;
 }
-.btn.btn-brown:hover {
+.btn.btn--brown:hover {
   color: #FFF;
   background-color: #592B18;
 }
-.btn.btn-gold {
+.btn.btn--gold {
   color: #D9AA8A;
   border-color: #D9AA8A;
 }
-.btn.btn-gold:hover {
+.btn.btn--gold:hover {
   color: #FFF;
   background-color: #D9AA8A;
 }
-.btn.btn-white {
+.btn.btn--white {
   color: #FFF;
   border-color: #FFF;
 }
-.btn.btn-white:hover {
+.btn.btn--white:hover {
   color: #333;
   background-color: #FFF;
 }
@@ -246,14 +246,11 @@ header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
 header .main-menu .item .item__contents .contents__texture {
   padding: 26px 0;
   font-size: 12px;
-  background-image: url('../images/main_menu_pattern.jpg');
-  background-repeat: repeat-x;
+  background-image: url("../images/main_menu_pattern.jpg");
 }
 header .main-menu .item .item__contents .contents__texture h4 {
   color: #999;
   font-weight: 900;
-  font-size: 12px;
-  margin: 0;
 }
 header .main-menu .item .item__contents .contents__texture p {
   color: #64a70b;
@@ -272,9 +269,6 @@ header .badges .badge {
   box-shadow: 4px 4px 10px rgba(0,0,0,.15);
   cursor: pointer;
 }
-header .badges .badge:last-child {
-  margin-bottom: 0;
-}
 
 
 /*VISUAL*/
@@ -284,7 +278,6 @@ header .badges .badge:last-child {
   background-position: center;
 }
 .visual .inner {
-  width: 1100px;
   height: 646px;
 }
 .visual .title {
@@ -292,7 +285,7 @@ header .badges .badge:last-child {
   top: 88px;
   left: -10px;
 }
-.visual .btn {
+.visual .title .btn {
   position: absolute;
   top: 259px;
   left: 173px;

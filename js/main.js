@@ -23,21 +23,6 @@ searchInputEl.addEventListener('blur', function () {
 
 
 /**
- * 순서대로 나타나는 기능
- */
-// 나타날 요소들(.fade-in) 찾기.
-const fadeEls = document.querySelectorAll('.fade-in')
-// 나타날 요소들을 하나씩 반복해서 처리!
-fadeEls.forEach(function (fadeEl, index) {
-  // 각 요소들을 순서대로(delay) 보여지게 함!
-  gsap.to(fadeEl, 1, {
-    delay: (index + 1) * .7,
-    opacity: 1
-  })
-})
-
-
-/**
  * 페이지 스크롤에 따른 요소 제어
  */
 // 페이지 스크롤에 영향을 받는 요소들을 검색!
@@ -51,9 +36,7 @@ window.addEventListener('scroll', _.throttle(function () {
     // Badge 요소 숨기기!
     gsap.to(badgeEl, .6, {
       opacity: 0,
-      onComplete: function () {
-        badgeEl.style.display = 'none'
-      }
+      display: 'none'
     })
     // 상단으로 스크롤 버튼 보이기!
     gsap.to(toTopEl, .2, {
@@ -65,8 +48,8 @@ window.addEventListener('scroll', _.throttle(function () {
   } else {
     // Badge 요소 보이기!
     gsap.to(badgeEl, .6, {
-      display: 'block',
-      opacity: 1
+      opacity: 1,
+      display: 'block'
     })
     // 상단으로 스크롤 버튼 숨기기!
     gsap.to(toTopEl, .2, {
@@ -80,6 +63,21 @@ toTopEl.addEventListener('click', function () {
   // 페이지 위치를 최상단으로 부드럽게(0.7초 동안) 이동.
   gsap.to(window, .7, {
     scrollTo: 0
+  })
+})
+
+
+/**
+ * 순서대로 나타나는 기능
+ */
+// 나타날 요소들(.fade-in) 찾기.
+const fadeEls = document.querySelectorAll('.fade-in')
+// 나타날 요소들을 하나씩 반복해서 처리!
+fadeEls.forEach(function (fadeEl, index) {
+  // 각 요소들을 순서대로(delay) 보여지게 함!
+  gsap.to(fadeEl, 1, {
+    delay: (index + 1) * .7,
+    opacity: 1
   })
 })
 
