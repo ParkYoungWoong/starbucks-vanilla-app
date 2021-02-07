@@ -2,7 +2,8 @@
 
 # STARBUCKS
 
-스타벅스 랜딩 페이지(홈페이지)를 만드는 예제입니다. 
+스타벅스 랜딩 페이지(홈페이지)를 만드는 예제입니다. <br>
+아래 내용을 모두 읽어보세요!
 
 [DEMO](https://flamboyant-lumiere-482a1e.netlify.app/)
 
@@ -38,7 +39,12 @@
 
 웹페이지가 소셜 미디어(페이스북 등)로 공유될 때 우선적으로 활용되는 정보를 지정합니다.
 
+Slack -
+
 ![Slack Open Graph example](https://raw.githubusercontent.com/ParkYoungWoong/starbucks-vanilla-app/master/_assets/slack_message_og_example.jpg)
+
+KakaoTalk -
+
 ![KakaoTalk Open Graph example](https://raw.githubusercontent.com/ParkYoungWoong/starbucks-vanilla-app/master/_assets/kakao_og_example.jpg)
 
 [더 많은 오픈 그래프 속성 보기](https://ogp.me/)
@@ -74,12 +80,12 @@
 <meta property="twitter:url" content="https://starbucks.co.kr" />
 ```
 
-- twitter:card: 페이지(카드)의 유형(E.g. `summary`, `player`)
-- twitter:site: 속한 사이트의 이름
-- twitter:title: 페이지의 이름(제목)
-- twitter:description: 페이지의 간단한 설명
-- twitter:image: 페이지의 대표 이미지 주소(URL)
-- twitter:url: 페이지 주소(URL)
+- `twitter:card`: 페이지(카드)의 유형(E.g. `summary`, `player`)
+- `twitter:site`: 속한 사이트의 이름
+- `twitter:title`: 페이지의 이름(제목)
+- `twitter:description`: 페이지의 간단한 설명
+- `twitter:image`: 페이지의 대표 이미지 주소(URL)
+- `twitter:url`: 페이지 주소(URL)
 
 ## Favicon(파비콘, favorites icon)
 
@@ -163,7 +169,14 @@ body {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
 ```
 
-[gsap.to() 사용법](https://greensock.com/docs/v3/GSAP/gsap.to())
+[.to() 사용법](https://greensock.com/docs/v3/GSAP/gsap.to())
+[GSAP Easing](https://greensock.com/docs/v2/Easing)
+
+```js
+gsap.to(요소, 시간, 옵션)
+// 또는
+TweenMax.to(요소, 시간, 옵션)
+```
 
 ```js
 gsap.to(window, .7, {
@@ -178,11 +191,25 @@ gsap.to(window, .7, {
 [Getting Started With Swiper](https://swiperjs.com/get-started)
 
 ```html
+<!-- in HEAD -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- in BODY -->
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">1</div>
+    <div class="swiper-slide">2</div>
+    <div class="swiper-slide">3</div>
+  </div>
+</div>
 ```
 
-[Swiper API](https://swiperjs.com/swiper-api)
+[Swiper API](https://swiperjs.com/swiper-api)(옵션)을 확인하세요!
+
+```js
+new Swiper(요소, 옵션);
+```
 
 ```js
 new Swiper('.swiper-container', {
@@ -199,13 +226,17 @@ new Swiper('.swiper-container', {
 유튜브 영상이 출력될 위치에 요소를 지정(생성)합니다.
 
 ```html
+<!-- in HEAD -->
+<script defer src="./js/youtube.js"></script>
+
+<!-- in BODY -->
 <div id="player"></div>
 ```
 
 `onYouTubePlayerAPIReady` 함수 이름은 Youtube IFrame Player API에서 사용하는 이름이기 때문에 다르게 지정하면 동작하지 않습니다!<br>
 그리고 함수는 전역(Global) 등록해야 합니다!
 
-[플레이어 매개변수(playerVars)](https://developers.google.com/youtube/player_parameters.html?playerVersion=HTML5&hl=ko)에서 더 많은 옵션을 확인할 수 있습니다.
+[플레이어 매개변수(playerVars)](https://developers.google.com/youtube/player_parameters.html?playerVersion=HTML5&hl=ko#Parameters)에서 더 많은 옵션을 확인할 수 있습니다.
 
 ```js
 // Youtube IFrame API를 비동기로 로드합니다.
@@ -258,7 +289,7 @@ new ScrollMagic
 
 [Lodash](https://lodash.com/)는 다양한 유틸리티 기능을 제공하는 자바스크립트 라이브러리입니다.
 
-[Lodash API](https://lodash.com/docs/4.17.15)
+[Lodash API](https://lodash.com/docs/4.17.15) <br>
 [Lodash throttle](https://lodash.com/docs/4.17.15#throttle)
 
 ```html
