@@ -197,9 +197,6 @@ header .main-menu {
   z-index: 1;
   display: flex;
 }
-header .main-menu .item {
-
-}
 header .main-menu .item .item__name {
   padding: 10px 20px 34px 20px;
   font-family: Arial, sans-serif;
@@ -321,9 +318,6 @@ header .badges .badge {
 
 
 /*NOTICE*/
-.notice {
-  
-}
 /*NOTICE LINE*/
 .notice .notice-line {
   position: relative;
