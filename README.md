@@ -8,7 +8,7 @@
 [master 브랜치로 이동](https://github.com/ParkYoungWoong/starbucks-vanilla-app) <br/>
 [signin 브랜치로 이동](https://github.com/ParkYoungWoong/starbucks-vanilla-app/tree/feature/signin)
 
-[DEMO](https://flamboyant-lumiere-482a1e.netlify.app/)
+[DEMO](https://flamboyant-lumiere-482a1e.netlify.app/) <br/>
 [DEMO+signin](https://priceless-bhabha-83fc0d.netlify.app/)
 
 ![Starbucks](https://raw.githubusercontent.com/ParkYoungWoong/starbucks-vanilla-app/master/_assets/main_screenshot.jpg)
