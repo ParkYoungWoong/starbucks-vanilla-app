@@ -442,6 +442,7 @@ header .badges .badge {
   bottom: 40px;
   left: 0;
   right: 0;
+  z-index: 0;
 }
 .notice .promotion .swiper-pagination .swiper-pagination-bullet {
   background-color: transparent;
