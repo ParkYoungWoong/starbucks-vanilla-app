@@ -194,8 +194,8 @@ gsap.to(window, .7, {
 
 [Getting Started With Swiper](https://swiperjs.com/get-started)
 
-> [2021.08.26 Updated]
-> 강의와 같이 Swiper 6버전을 사용합니다.
+> [2021.08.26 Updated]<br>
+> 강의와 같이 Swiper 6버전을 사용합니다.<br>
 > 7/8버전의 사용법이 다르기 때문에 6버전을 유지합니다.
 
 ```html
